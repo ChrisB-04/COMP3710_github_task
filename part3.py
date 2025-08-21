@@ -41,10 +41,6 @@ for _ in range(threshold):
     # increment counts
     counts.index_put_((i, j), torch.ones_like(i, dtype=counts.dtype), accumulate=True)
 
-
-# #plot 
-# fig = plt.figure(figsize=(16,10))
-
 def processFractal(a):
     """
     Display an array of iteration counts as a colorful 
